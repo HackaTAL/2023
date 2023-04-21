@@ -83,4 +83,16 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 
 ### Organisateurs
 
-...
+- TBA (WikiMedia)
+- Benjamin Piwowarski (ISIR, UPMC)
+- Benoît Laurent (Aday)
+- Éric San Juan (LIA, Université d'Avignon)
+- Guillaume Lechien (Aday)
+- Jeanne Vermeirsche (LBNC, Université d'Avignon)
+- Kevin Deturck (ERTIM, Inalco)
+- Loïc Grobol (MoDyCo, Université Paris Nanterre)
+- Nicolas Dugué (LIUM, Université du Mans)
+- Sahar Ghannay (LISN, Université Paris Saclay)
+- Tania Jimenez @univ-avignon.fr
+- Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
+- Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
