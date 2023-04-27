@@ -93,6 +93,6 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 - Loïc Grobol (MoDyCo, Université Paris Nanterre)
 - Nicolas Dugué (LIUM, Université du Mans)
 - Sahar Ghannay (LISN, Université Paris Saclay)
-- Tania Jimenez @univ-avignon.fr
+- Tania Jimenez (LIA, Université d'Avignon)
 - Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
 - Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
