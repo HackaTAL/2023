@@ -1,6 +1,6 @@
 ![HackaTAL 2023](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
 
-# WikiMedia & Politique / Détection de Citations
+# WikiPedia & Politique / Détection de Citations
 
 ## HackaTAL 2023
 ---------------
@@ -9,7 +9,7 @@ avec la conférence CORIA-TALN 2023
 
 ### Résumé
 
-Tâches : Contributeurs et Politique sur WikiMedia / Détection de citations 
+Tâches : Contributeurs et Politique sur WikiPedia / Détection de citations 
 Site web : http://hackatal.github.io/2023  
 Dates : 5 juin 2023  
 Lieu : Paris, SCAI  
@@ -48,7 +48,9 @@ Trois tâches seront proposées :
 
 
 1 - Extraire les thématiques de chacun des partis politiques français sélectionnés dans le cadre de ce défi, à partir des communiqués de presse mis en ligne sur les sites respectifs et organisés dans une base de données. Puis chercher un recouvrement de ces thématiques avec des pages du Wikipédia francophone
+
 2 - Extraire de ces pages du Wikipédia les modifications qui comportent une “intention politique” 
+
 3 - Extraire les sources des pages du Wikipédia identifiées aux étapes précédentes pour les comparer avec les sources qui sont recommandées aux contributeurs par WikiMedia mais aussi les situer dans le cadre de leur ligne éditoriale, tel que proposé dans la Roue des médias 
 
 
