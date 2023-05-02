@@ -4,16 +4,16 @@
 
 ## HackaTAL 2023
 ---------------
-*(hackathon en traitement automatique des langues)*  
-avec la conférence CORIA-TALN 2023
+*(hackathon du Traitement Automatique des Langues)*  
+avec la conférence CORIA TALN RJCRI RECITAL 2023
 
 ### Résumé
 
 Tâches : Contributeurs et Politique sur Wikipédia / Détection de citations 
 Site web : http://hackatal.github.io/2023  
-Dates : 5 juin 2023  
+Dates : 5 et 6 juin 2023  
 Lieu : Paris, SCAI  
-Inscription : (TBC)  
+Inscription : https://framaforms.org/inscription-au-hackatal-2023-1683007751  
 Fil twitter : https://twitter.com/hashtag/HackaTAL2023  
 Slack : (TBC)  
 
@@ -32,15 +32,32 @@ L’événement aura lieu cette année à Paris le 5 juin 2023. Il est très lar
 
 **1. Wikipédia & Politique**
 
-Description TBC
+En nous basant sur l’hypothèse que Wikipédia représenterait une base de référence du partage des représentations actuelles dans l’espace politique, nous proposons aux participants de saisir les recouvrements discursifs à l’oeuvre entre le Wikipédia francophone et les communiqués de presse politiques mis en ligne par les partis politiques français. Quelles sont les thématiques avec lesquelles chaque parti s’identifie ? Sur quelle(s) thématique(s) spécifique(s) se positionnent les partis politiques français ? Peut-on retrouver ces mêmes thématiques au sein du Wikipédia francophone, et dans quelle mesure ? 
+
+
+Une attention particulière pourra être portée à l’évolution de ces thématiques au sein du Wikipédia francophone en suivant les modifications sur les pages pour lesquelles on observera un recouvrement avec les thématiques des partis politiques. Enfin, la question des sources utilisées pour ces pages pourra être approfondie. 
+
+
+Il ne s’agira pas d’une surveillance des pages Wikipédia de personnalités politiques, qui font souvent l’objet de polémiques et conflits au sein de la communauté wikipédienne, mais d’une veille plus large de toutes les pages du Wikipédia francophone. 
 
 *Tâches*
 
-- TBC
+Trois tâches seront proposées : 
+
+1. Extraire les thématiques de chacun des partis politiques français sélectionnés dans le cadre de ce défi, à partir des communiqués de presse mis en ligne sur les sites respectifs et organisés dans une base de données. Puis chercher un recouvrement de ces thématiques avec des pages du Wikipédia francophone
+1. Extraire de ces pages du Wikipédia les modifications qui comportent une “intention politique” 
+1. Extraire les sources des pages du Wikipédia identifiées aux étapes précédentes pour les comparer avec les sources qui sont recommandées aux contributeurs par WikiMedia mais aussi les situer dans le cadre de leur ligne éditoriale, tel que proposé dans la Roue des médias 
 
 *Ressources*
 
-- TBC
+Les ressources mises à disposition pour ce défi : 
+
+- Un corpus des communiqués de presse de partis politiques français ( RN, FI et PS par ordre décroissant de nombre de communiqué de presse publiés sur ces 5 dernières années) 
+- Un corpus “Dump du Wikipédia francophone” ainsi qu’un “historique” indexé dans PostGreSQL accessible en ligne
+- Une mise à disposition d'environnements JupyterLab et Rstudio
+- Une interface Shiny pour la participation des non-informaticiens
+
+
 
 **2. Détection de Citations**
 
@@ -72,7 +89,7 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 
 **Mardi 6 juin**
 
-- ??h-??h : restitution de l'atelier
+- (horaire à définir) : restitution de l'atelier
 
 ### Organisation pratique
 
@@ -93,6 +110,6 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 - Loïc Grobol (MoDyCo, Université Paris Nanterre)
 - Nicolas Dugué (LIUM, Université du Mans)
 - Sahar Ghannay (LISN, Université Paris Saclay)
-- Tania Jimenez @univ-avignon.fr
+- Tania Jimenez (LIA, Université d'Avignon)
 - Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
 - Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
