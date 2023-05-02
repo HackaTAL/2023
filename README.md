@@ -14,7 +14,7 @@ Site web : http://hackatal.github.io/2023
 Dates : 5 et 6 juin 2023  
 Lieu : Paris, SCAI  
 Inscription : https://framaforms.org/inscription-au-hackatal-2023-1683007751  
-Fil twitter : https://twitter.com/hashtag/HackaTAL2023  
+Fil twitter : https://twitter.com/hashtag/HackaTAL  
 Slack : (TBC)  
 
 ### Le HackaTAL
@@ -100,16 +100,16 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 
 ### Organisateurs
 
-- TBA (WikiMedia)
-- Benjamin Piwowarski (ISIR, UPMC)
-- Benoît Laurent (Aday)
-- Éric San Juan (LIA, Université d'Avignon)
-- Guillaume Lechien (Aday)
-- Jeanne Vermeirsche (LBNC, Université d'Avignon)
-- Kevin Deturck (ERTIM, Inalco)
-- Loïc Grobol (MoDyCo, Université Paris Nanterre)
+- Kévin Deturck (ERTIM, Inalco)
 - Nicolas Dugué (LIUM, Université du Mans)
-- Sahar Ghannay (LISN, Université Paris Saclay)
-- Tania Jimenez (LIA, Université d'Avignon)
 - Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
+- Sahar Ghannay (LISN, Université Paris Saclay)
+- Loïc Grobol (MoDyCo, Université Paris Nanterre)
+- Tania Jimenez (LIA, Université d'Avignon)
+- Benoît Laurent (Aday)
+- Guillaume Lechien (Aday)
+- Benjamin Piwowarski (ISIR, UPMC)
+- Éric San Juan (LIA, Université d'Avignon)
+- Jeanne Vermeirsche (LBNC, Université d'Avignon)
 - Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
+- TBA (WikiMedia)
