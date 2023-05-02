@@ -1,6 +1,6 @@
 ![HackaTAL 2023](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
 
-# WikiMedia & Politique / Détection de Citations
+# Wikipédia & Politique / Détection de citations
 
 ## HackaTAL 2023
 ---------------
@@ -9,7 +9,7 @@ avec la conférence CORIA-TALN 2023
 
 ### Résumé
 
-Tâches : Contributeurs et Politique sur WikiMedia / Détection de citations 
+Tâches : Contributeurs et Politique sur Wikipédia / Détection de citations 
 Site web : http://hackatal.github.io/2023  
 Dates : 5 juin 2023  
 Lieu : Paris, SCAI  
@@ -23,14 +23,14 @@ Dans le cadre de la conférence TALN 2023, nous organisons la 5ème édition du 
 
 Les tâches proposées portent cette année sur deux thématiques (détails ci-dessous) :
 
-- WikiMedia & Politique
-- Détection de Citations
+- Wikipédia & Politique
+- Détection de citations
 
 L’événement aura lieu cette année à Paris le 5 juin 2023. Il est très largement ouvert à tous : juniors et séniors, informaticiens, linguistes, politologues, juristes, sociologues, etc. et ne nécessite aucune préparation particulière ni de compétences spécifiques... toute personne intéressée est bienvenue  pour apporter sa contribution aux travaux collaboratifs (par équipes) que nous réaliserons sur ces deux jours !
 
 ### Défis proposés
 
-**1. WikiMedia & Politique**
+**1. Wikipédia & Politique**
 
 Description TBC
 
