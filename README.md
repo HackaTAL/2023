@@ -121,6 +121,7 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 - Tania Jimenez (LIA, Université d'Avignon)
 - Benoît Laurent (Aday)
 - Guillaume Lechien (Aday)
+- Damien Nouvel (ERTIM, Inalco)
 - Benjamin Piwowarski (ISIR, UPMC)
 - Éric San Juan (LIA, Université d'Avignon)
 - Jeanne Vermeirsche (LBNC, Université d'Avignon)
