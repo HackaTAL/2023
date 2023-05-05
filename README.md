@@ -102,7 +102,7 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 
 **Mardi 6 juin**
 
-- (horaire à définir) : restitution de l'atelier
+- 15h15-16h15 : restitution des équipes, vote, remise du prix
 
 ### Organisation pratique
 
