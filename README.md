@@ -113,6 +113,7 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 
 ### Organisateurs
 
+- Adelaïde Calais (WikiMedia France)
 - Kévin Deturck (ERTIM, Inalco)
 - Nicolas Dugué (LIUM, Université du Mans)
 - Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
@@ -126,4 +127,3 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 - Éric San Juan (LIA, Université d'Avignon)
 - Jeanne Vermeirsche (LBNC, Université d'Avignon)
 - Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
-- Adelaïde Calais (WikiMedia France)
