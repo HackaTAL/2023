@@ -12,7 +12,7 @@ avec la conférence CORIA TALN RJCRI RECITAL 2023
 Tâches : Contributeurs et Politique sur Wikipédia / Détection de citations 
 Site web : http://hackatal.github.io/2023  
 Dates : 5 et 6 juin 2023  
-Lieu : Paris, SCAI  
+Lieu : SCAI, 4 place Jussieu, 75005 Paris 
 Inscription : https://framaforms.org/inscription-au-hackatal-2023-1683007751  
 Fil twitter : https://twitter.com/hashtag/HackaTAL  
 Slack : (TBC)  
@@ -69,19 +69,19 @@ Aussi les participants pourraient choisir de combiner une partie de l'extraction
 
 *Tâches*
 
-- détection de citations (discours rapportés direct)
-- détection de source (entité qui a produit initialement le discours)
-- détection du couple (discours, source) qui décrit un discours rapporté. Cette sous-tâches permet de mettre en relation les deux précédentes.
-- Représentation des résultats (dataviz). Cette liste contient des propositions non exhaustives
-  - similarité entre discours
-  - distribution des discours par genre des sources (féminin/masculin)
-  - textométrie
-  - recouvrement des thématiques du défis "Wikipédia et politiques" avec les discours extraits
+- Détection de citations (discours rapportés direct)
+- Détection de source (entité qui a produit initialement le discours)
+- Détection du couple (discours, source) comme relation entre les deux détections précédentes
+- Représentation des résultats (dataviz), propositions non exhaustives :
+  - Similarité entre discours
+  - Distribution des discours par genre des sources (féminin/masculin)
+  - Textométrie
+  - Recouvrement des thématiques du défis "Wikipédia et politiques" avec les discours extraits
 
 *Ressources*
 
-- un corpus de contenus écrits du web annoté et utilisable pour l'entraînement et l'évaluation
-- un corpus de donnée non annotée contenant des discours rapportés
+- Corpus de contenus écrits du web annoté et utilisable pour l'entraînement et l'évaluation
+- Corpus de données non annotée contenant des discours rapportés
 
 
 ### Prix
@@ -90,7 +90,7 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 
 ### Planning prévisionnel
 
-**Lundi 5 juin**
+**Lundi 5 juin** au SCAI, 4 place Jussieu, 75005 Paris 
 
 - 10h-11h : introduction, présentation du hackathon
 - 11h-12h : discussions par groupes
@@ -100,7 +100,7 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 - 18h-20h : conférence, cocktail, repas
 - 20h-00h : développements par équipes
 
-**Mardi 6 juin**
+**Mardi 6 juin** aux Cordeliers, 15 rue de l'École de Médecine, 75006 Paris
 
 - 15h15-16h15 : restitution des équipes, vote, remise du prix
 
