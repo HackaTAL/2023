@@ -127,3 +127,4 @@ Logiciels et données en ligne : https://github.com/HackaTAL/2023
 - Éric San Juan (LIA, Université d'Avignon)
 - Jeanne Vermeirsche (LBNC, Université d'Avignon)
 - Manel Zarrouk (LIPN, Université Sorbonne Paris Nord)
+- Lili Wu (ERTIM, Inalco)
