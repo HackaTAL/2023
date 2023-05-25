@@ -116,6 +116,7 @@ Aucune préparation requise des participants
 - Kévin Deturck (ERTIM, Inalco)
 - Nicolas Dugué (LIUM, Université du Mans)
 - Yoann Dupont (Lattice, Université Sorbonne Nouvelle)
+- Xavier Fresquet (SCAI, Sorbonne Université)
 - Sahar Ghannay (LISN, Université Paris Saclay)
 - Loïc Grobol (MoDyCo, Université Paris Nanterre)
 - Tania Jimenez (LIA, Université d'Avignon)
