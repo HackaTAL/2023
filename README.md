@@ -94,11 +94,11 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 
 - 10h-11h : introduction, présentation du hackathon
 - 11h-12h : discussions par groupes
-- 12h-14h : pause déjeuner
+- 12h-13h : pause déjeuner
 - 13h-17h : développements par équipes
-- 17h-18h : présentations intermédiaires
-- 18h-20h : conférence, cocktail, repas
-- 20h-00h : développements par équipes
+- 17h-18h : NLP pour les sciences sociales (et vice-versa) (Étienne Ollion, CNRS)
+- 18h-20h : cocktail et buffet
+- 20h-23h : développements par équipes
 
 **Mardi 6 juin** aux Cordeliers, 15 rue de l'École de Médecine, 75006 Paris
 
