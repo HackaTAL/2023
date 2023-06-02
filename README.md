@@ -108,7 +108,12 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 
 BYOD (amenez votre ordinateur)  
 Pas de critères pour participer, le hackathon est ouvert à tous !  
-Aucune préparation requise des participants  
+Aucune préparation requise des participants 
+
+### Plan d'accés à SCAI
+
+<img width="428" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/ddd6f7a5-70e6-436b-98b3-ea3fc6aa4d8e">
+
 
 ### Organisateurs
 
