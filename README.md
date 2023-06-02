@@ -1,4 +1,4 @@
-![HackaTAL 2023](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
+<img width="1500" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/8d0770ea-1dbb-4a71-9847-7d9b120552f4">
 
 # Wikipédia & Politique / Détection de citations
 
@@ -61,7 +61,7 @@ Les ressources mises à disposition pour ce défi :
 
 **2. Détection de Citations**
 
-Dans ce défi nous proposons d'extraire les discours rapportés par les médias, et en particulier dans des contenus écrits du web. Ce type d'élément est constitué minimalement d'un segment de discours rapporté, souvent associé à sa source d'origine, c'est-à-dire la personne physique ou morale qui a tenu ces propos. Nous nous intéresserons ici uniquement aux discours délimités par des marqueurs typographiques de type guillemets, autrement dit le discours direct. Quant à la source, nous souhaiterions pouvoir retrouver une dénomination interprétable par un utilisateur à qui on présenterait les résultats, typiquement une Entité Nommée ou une expression référentielle.
+Dans ce défi nous proposons d'extraire les discours rapportés par les médias, et en particulier dans des contenus écrits du web. Ce type d'élément est constitué minimalement d'un segment de discours rapporté, souvent associé à sa source d'origine, c'est-à-dire la personne physique ou morale qui a tenu ces propos. Nous nous intéresserons aussi bien au discours direct, délimités par des marqueurs typographiques de type guillemets, qu'au discours indirect. Quant à la source, nous souhaiterions pouvoir retrouver une dénomination interprétable par un utilisateur à qui on présenterait les résultats, typiquement une Entité Nommée ou une expression référentielle.
 
 Une sous-tâche de visualisation est également proposée pour se projeter dans un emploi de ces données.
 Aussi les participants pourraient choisir de combiner une partie de l'extraction avec un type de visualisation de la donnée pour proposer un résultat possible.
@@ -69,7 +69,7 @@ Aussi les participants pourraient choisir de combiner une partie de l'extraction
 
 *Tâches*
 
-- Détection de citations (discours rapportés direct)
+- Détection de citations (discours rapportés direct et indirect)
 - Détection de source (entité qui a produit initialement le discours)
 - Détection du couple (discours, source) comme relation entre les deux détections précédentes
 - Représentation des résultats (dataviz), propositions non exhaustives :
@@ -93,23 +93,28 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 **Lundi 5 juin** au SCAI, 4 place Jussieu, 75005 Paris 
 
 - 10h-11h : introduction, présentation du hackathon
-- 11h-13h : discussions par groupes
-- 13h-14h : pause déjeuner
+- 11h-12h30 : discussions par groupes
+- 12h30-14h : pause déjeuner
 - 14h-17h : développements par équipes
-- 17h-18h : présentations intermédiaires
-- 18h-19h : NLP pour les sciences sociales (et vice-versa) (Étienne Ollion, CNRS)
-- 19h-20h : cocktail et buffet
+- 17h-17h30 : présentations intermédiaires
+- 17h30-18h30 : NLP pour les sciences sociales (et vice-versa) (Étienne Ollion, CNRS)
+- 18h30-20h : cocktail et buffet
 - 20h-23h : développements par équipes
 
 **Mardi 6 juin** aux Cordeliers, 15 rue de l'École de Médecine, 75006 Paris
 
-- 15h-16h : restitution des équipes, vote, remise du prix
+- 15h15-16h15 : restitution des équipes, vote, remise du prix
 
 ### Organisation pratique
 
 BYOD (amenez votre ordinateur)  
 Pas de critères pour participer, le hackathon est ouvert à tous !  
-Aucune préparation requise des participants  
+Aucune préparation requise des participants 
+
+### Plan d'accés à SCAI
+
+<img width="428" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/ddd6f7a5-70e6-436b-98b3-ea3fc6aa4d8e">
+
 
 ### Organisateurs
 
