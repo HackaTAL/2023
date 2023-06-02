@@ -11,6 +11,7 @@ Instead, edit the stylus (.styl) files and compile it to CSS on your machine.
 /* ----------------------------------------------------------------------------
  * Base
  */
+/*
 html,
 body,
 div,
@@ -118,6 +119,7 @@ input {
   font-size: 13px;
   color: #505050;
 }
+*/
 /*
 @media (max-width: 480px) {
   body,
