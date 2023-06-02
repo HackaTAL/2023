@@ -1,4 +1,4 @@
-![HackaTAL 2023](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
+<img width="1680" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/6bdc9487-bbe7-44ca-b9ab-5a3706fbd0c7">
 
 # Wikipédia & Politique / Détection de citations
 
