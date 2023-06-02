@@ -11,7 +11,6 @@ Instead, edit the stylus (.styl) files and compile it to CSS on your machine.
 /* ----------------------------------------------------------------------------
  * Base
  */
-/*
 html,
 body,
 div,
@@ -119,8 +118,6 @@ input {
   font-size: 13px;
   color: #505050;
 }
-*/
-/*
 @media (max-width: 480px) {
   body,
   td,
@@ -129,9 +126,8 @@ input {
     font-size: 12px;
   }
 }
-*/
 a {
-  color: red;
+  color: #009688;
   text-decoration: none;
 }
 a:hover {
@@ -278,8 +274,10 @@ a:hover {
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-/*  zoom: 1;*/
-/*  max-width: 700px; */
+  /*
+  zoom: 1;
+  max-width: 700px;
+  */
 }
 .content:before,
 .content:after {
@@ -347,7 +345,6 @@ body.big-h3 .content h3:before {
   left: -40px;
   width: 100%;
 }
-/*
 @media (max-width: 768px) {
   .content h1,
   .content h2,
@@ -365,7 +362,6 @@ body.big-h3 .content h3:before {
     width: 120%;
   }
 }
-*/
 .content h4,
 .content h5,
 .content .small-heading,
@@ -389,7 +385,6 @@ body:not(.big-h3) .content h3 {
 .content h1:first-child:before {
   display: none;
 }
-/*
 @media (max-width: 768px) {
   .content h4,
   .content h5,
@@ -410,7 +405,6 @@ body:not(.big-h3) .content h3 {
     padding-top: 10px;
   }
 }
-*/
 body.no-literate .content pre > code {
   background: #f3f6fb;
   border: solid 1px #e7eaee;
@@ -440,7 +434,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
   box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
 }
-/*
 @media (max-width: 1180px) {
   .content pre > code {
     background: #f3f6fb;
@@ -472,7 +465,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
   }
 }
-*/
 .button {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -512,7 +504,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .content .button + em {
   color: #9090aa;
 }
-/*
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
     background-color: #f3f6fb;
@@ -524,8 +515,10 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content {
     padding-left: 0;
     padding-right: 0;
+    /*
     width: 930px;
     max-width: none;
+    */
   }
   body:not(.no-literate) .content > p,
   body:not(.no-literate) .content > ul,
@@ -595,7 +588,9 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content > table {
     margin-left: 40px;
     margin-right: 40px;
+    /*
     max-width: 470px;
+    */
   }
   body:not(.no-literate):not(.big-h3) .content > h3 {
     margin-left: 40px;
@@ -605,7 +600,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     padding-right: 0;
   }
 }
-*/
 .header {
   background: #f3f6fb;
   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
@@ -659,7 +653,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .header li a:hover {
   color: #3a3a44;
 }
-/*
 @media (min-width: 480px) {
   .header h1 {
     float: left;
@@ -692,7 +685,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     display: none;
   }
 }
-*/
 .menubar {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -738,7 +730,6 @@ a.big.button:hover,
 a.big.button:hover:visited {
   color: #fff;
 }
-/*
 @media (max-width: 480px) {
   .menubar {
     padding: 20px;
@@ -785,7 +776,6 @@ a.big.button:hover:visited {
     box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
   }
 }
-*/
 .menubar {
   font-size: 0.9em;
 }
