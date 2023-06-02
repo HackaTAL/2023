@@ -1,4 +1,4 @@
-<img width="1500" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/6bdc9487-bbe7-44ca-b9ab-5a3706fbd0c7">
+<img width="1500" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/8d0770ea-1dbb-4a71-9847-7d9b120552f4">
 
 # Wikipédia & Politique / Détection de citations
 
