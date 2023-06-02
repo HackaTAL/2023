@@ -93,16 +93,17 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 **Lundi 5 juin** au SCAI, 4 place Jussieu, 75005 Paris 
 
 - 10h-11h : introduction, présentation du hackathon
-- 11h-12h : discussions par groupes
-- 12h-13h : pause déjeuner
-- 13h-17h : développements par équipes
-- 17h-18h : NLP pour les sciences sociales (et vice-versa) (Étienne Ollion, CNRS)
-- 18h-20h : cocktail et buffet
+- 11h-13h : discussions par groupes
+- 13h-14h : pause déjeuner
+- 14h-17h : développements par équipes
+- 17h-18h : présentations intermédiaires
+- 18h-19h : NLP pour les sciences sociales (et vice-versa) (Étienne Ollion, CNRS)
+- 19h-20h : cocktail et buffet
 - 20h-23h : développements par équipes
 
 **Mardi 6 juin** aux Cordeliers, 15 rue de l'École de Médecine, 75006 Paris
 
-- 15h15-16h15 : restitution des équipes, vote, remise du prix
+- 15h-16h : restitution des équipes, vote, remise du prix
 
 ### Organisation pratique
 
