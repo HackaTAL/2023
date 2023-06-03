@@ -1,4 +1,4 @@
-![HackaTAL 2019](https://raw.githubusercontent.com/HackaTAL/2019/gh-pages/HackaTAL_2019.png)
+![HackaTAL 2023](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
 
 # Wikipédia & Politique / Détection de citations
 
