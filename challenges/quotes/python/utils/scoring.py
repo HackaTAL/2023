@@ -6,7 +6,6 @@ import spacy
 from spacy.training import Example
 from spacy.scorer import PRFScore
 
-# TODO= docs[n]['file_upload'].split('_')[1]
 
 def extract_labelstudio_annotations(labelstudio_doc):
     id2entity = {
@@ -113,27 +112,43 @@ def score(predicted, gold_standard, nlp):
     return score
 
 
-def naive_prf_spans_score(predicted, gold_standard):
-    pred_spans = [
-        tuple(s)
-        for doc in predicted
-        for spans in doc['spans'].values()
-        for s in spans
-    ]
-    gold_spans = [
-        tuple(s)
-        for doc in gold_standard
-        for spans in doc['spans'].values()
-        for s in spans
-    ]
+def get_annotations_sets(dataset):
+    docs = []
+    for doc in dataset:
+        spans_sets = defaultdict(list)
+        for spans in doc['spans'].values():
+            for s in spans:
+                spans_sets[s[2]].append(s)
+                spans_sets['0'].append(s)
+        docs.append(spans_sets)
 
-    scorer = PRFScore()
-    scorer.score_set(set(pred_spans), set(gold_spans))
+    return docs
+
+
+def naive_prf_spans_score(predicted, gold_standard):
+    pred_spans = get_annotations_sets(predicted)
+    gold_spans = get_annotations_sets(gold_standard)
+
+    score_per_type = defaultdict(PRFScore)
+    for pred, gold in zip(pred_spans, gold_spans):
+        labels = set([label for label in pred])
+        labels |= set([label for label in gold])
+        for label in labels:
+            score_per_type[label].score_set(set(pred), set(gold))
+
     score = {
-        '0_p': scorer.precision,
-        '0_r': scorer.recall,
-        '0_f': scorer.fscore,
-        '0_per_type': {}
+        '0_p': score_per_type['0'].precision,
+        '0_r': score_per_type['0'].recall,
+        '0_f': score_per_type['0'].fscore,
+        '0_per_type': {
+            label: {
+                'r': sc.recall,
+                'p': sc.precision,
+                'f': sc.fscore,
+            }
+            for label, sc in score_per_type.items()
+            if label != '0'
+        }
     }
     return score
 
@@ -154,6 +169,14 @@ def main():
             gold_standard,
         )
     )
+#    nlp = spacy.load("fr_core_news_lg")
+#    print(
+#        score(
+#            predicted,
+#            gold_standard,
+#            nlp,
+#        )
+#    )
     return
 
 
@@ -169,7 +192,6 @@ def main():
     data = lbjson2data(input_path)
     dataset_stats = get_dataset_stats(data)
 
-    nlp = spacy.load("fr_core_news_lg")
     examples = lbjson2spacyexamples(data, nlp)
 
     dataset_stats['nb_tokens'] = sum([len(eg.reference) for eg in examples])
