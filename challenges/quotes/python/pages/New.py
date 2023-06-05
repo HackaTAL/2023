@@ -31,7 +31,7 @@ def compute_scores(file_name: Path):
     }
 
 
-@st.cache(hash_funcs={DashboardDb: id})
+@st.cache_resource()
 def prep_db():
     """Wrap db so it can be cached."""
     return DashboardDb(db_path)
