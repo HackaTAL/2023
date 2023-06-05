@@ -113,24 +113,29 @@ def score(predicted, gold_standard, nlp):
     return score
 
 
-def naive_prf_spans_score(predicted, gold_standard, label=None):
-    if label is None:
-        pred_spans = [
-            tuple(s)
-            for doc in predicted
-            for spans in doc['spans'].values()
-            for s in spans
-        ]
-        gold_spans = [
-            tuple(s)
-            for doc in gold_standard
-            for spans in doc['spans'].values()
-            for s in spans
-        ]
+def naive_prf_spans_score(predicted, gold_standard):
+    pred_spans = [
+        tuple(s)
+        for doc in predicted
+        for spans in doc['spans'].values()
+        for s in spans
+    ]
+    gold_spans = [
+        tuple(s)
+        for doc in gold_standard
+        for spans in doc['spans'].values()
+        for s in spans
+    ]
 
     scorer = PRFScore()
     scorer.score_set(set(pred_spans), set(gold_spans))
-    return scorer.to_dict()
+    score = {
+        '0_p': scorer.precision,
+        '0_r': scorer.recall,
+        '0_f': scorer.fscore,
+        '0_per_type': {}
+    }
+    return score
 
 
 def main():
