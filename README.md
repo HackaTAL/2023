@@ -61,11 +61,12 @@ Les ressources mises à disposition pour ce défi :
 
 **2. Détection de Citations**
 
+Tableur en ligne : https://lite.framacalc.org/hu3wi12bja-a1cx
+
 Dans ce défi nous proposons d'extraire les discours rapportés par les médias, et en particulier dans des contenus écrits du web. Ce type d'élément est constitué minimalement d'un segment de discours rapporté, souvent associé à sa source d'origine, c'est-à-dire la personne physique ou morale qui a tenu ces propos. Nous nous intéresserons aussi bien au discours direct, délimités par des marqueurs typographiques de type guillemets, qu'au discours indirect. Quant à la source, nous souhaiterions pouvoir retrouver une dénomination interprétable par un utilisateur à qui on présenterait les résultats, typiquement une Entité Nommée ou une expression référentielle.
 
 Une sous-tâche de visualisation est également proposée pour se projeter dans un emploi de ces données.
 Aussi les participants pourraient choisir de combiner une partie de l'extraction avec un type de visualisation de la donnée pour proposer un résultat possible.
-
 
 *Tâches*
 
