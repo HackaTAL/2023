@@ -102,7 +102,7 @@ Deux prix seront décernés, un pour chaque défi (TBC).
 - 18h30-20h : cocktail et buffet
 - 20h-23h : développements par équipes
 
-**Mardi 6 juin** aux Cordeliers, 15 rue de l'École de Médecine, 75006 Paris
+**Mardi 6 juin** aux Cordeliers, amphi Farabeuf, 15 rue de l'École de Médecine, 75006 Paris
 
 - 15h15-16h15 : restitution des équipes, vote, remise du prix
 
