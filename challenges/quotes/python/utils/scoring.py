@@ -4,7 +4,7 @@ import json
 
 import spacy
 from spacy.training import Example
-from spacy.training.scorer import PRFScore
+from spacy.scorer import PRFScore
 
 # TODO= docs[n]['file_upload'].split('_')[1]
 
@@ -113,16 +113,44 @@ def score(predicted, gold_standard, nlp):
     return score
 
 
-def naive_prf_spans_score(predicted, gold_standard):
-    pred_spans = [s for spans in predicted['spans'].values() for s in spans]
-    gold_spans = [s for spans in gold_standard['spans'].values() for s in spans]
+def naive_prf_spans_score(predicted, gold_standard, label=None):
+    if label is None:
+        pred_spans = [
+            tuple(s)
+            for doc in predicted
+            for spans in doc['spans'].values()
+            for s in spans
+        ]
+        gold_spans = [
+            tuple(s)
+            for doc in gold_standard
+            for spans in doc['spans'].values()
+            for s in spans
+        ]
+
     scorer = PRFScore()
-    return scorer.score_set(set(pred_spans), set(gold_spans))
+    scorer.score_set(set(pred_spans), set(gold_spans))
+    return scorer.to_dict()
 
 
 def main():
     import sys
-    input_path, output_path = sys.argv[1:]
+    #input_path, output_path = sys.argv[1:]
+    pred_path, gold_path = sys.argv[1:]
+
+    with open(pred_path) as f_in:
+        predicted = json.load(f_in)
+    with open(gold_path) as f_in:
+        gold_standard = json.load(f_in)
+
+    print(
+        naive_prf_spans_score(
+            predicted,
+            gold_standard,
+        )
+    )
+    return
+
 
     datasets = lbjson2data(input_path)
     for dataset_part, dataset in datasets.items():
