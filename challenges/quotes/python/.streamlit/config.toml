@@ -1,0 +1,7 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+address="10.20.2.18"
+port=18080
+
