@@ -27,16 +27,18 @@ class DashboardDb(SqliteDb):
                 id_team INTEGER,
                 file_name TEXT,
                 run_info TEXT,
-                ents_f REAL,
-                ents_r REAL,
-                ents_p REAL,
+                f REAL,
+                r REAL,
+                p REAL,
                 score_dump TEXT,
                 FOREIGN KEY(id_team) REFERENCES team(id_team)
         );
-        INSERT INTO teams(name) VALUES ("Team 1");
-        INSERT INTO teams(name) VALUES ("Team 2");
-        INSERT INTO teams(name) VALUES ("Team 3");
-        INSERT INTO teams(name) VALUES ("Team 4");
+        INSERT INTO teams(name) VALUES ("Elis*");
+        INSERT INTO teams(name) VALUES ("ciTAL");
+        INSERT INTO teams(name) VALUES ("HackaTeam");
+        INSERT INTO teams(name) VALUES ("FlowBERT");
+        INSERT INTO teams(name) VALUES ("Team 5");
+        INSERT INTO teams(name) VALUES ("Team 6");
         """
         super().__init__(db_path, sql)
 
@@ -46,9 +48,9 @@ class DashboardDb(SqliteDb):
         id_team: int,
         file_name: str,
         run_info: str,
-        ents_f: float,
-        ents_r: float,
-        ents_p: float,
+        f: float,
+        r: float,
+        p: float,
         score_dump: str,
     ):
         """Insert a score into the db."""
@@ -56,7 +58,7 @@ class DashboardDb(SqliteDb):
             try:
                 conn.execute(
                     """
-                    INSERT INTO scores(date_inserted, id_team, file_name, run_info, ents_f, ents_r, ents_p, score_dump)
+                    INSERT INTO scores(date_inserted, id_team, file_name, run_info, f, r, p, score_dump)
                     VALUES(?, ?, ?, ?, ?, ?, ?, ?)
                     ;
                     """,
@@ -65,9 +67,9 @@ class DashboardDb(SqliteDb):
                         id_team,
                         file_name,
                         run_info,
-                        ents_f,
-                        ents_r,
-                        ents_p,
+                        f,
+                        r,
+                        p,
                         score_dump,
                     ),
                 )
@@ -77,7 +79,7 @@ class DashboardDb(SqliteDb):
     def get_all(self):
         """Get all scores."""
         sql = """
-            SELECT date_inserted, name, file_name, run_info, ents_f, ents_r, ents_p, score_dump
+            SELECT date_inserted, name, file_name, run_info, f, r, p, score_dump
             FROM scores
             INNER JOIN teams
             ON scores.id_team = teams.id_team
@@ -94,7 +96,7 @@ class DashboardDb(SqliteDb):
         sql = """
             SELECT
                 name,
-                MAX(ents_f)
+                MAX(f)
             FROM scores
             INNER JOIN teams
             ON scores.id_team = teams.id_team

@@ -10,28 +10,22 @@ import streamlit as st
 
 from db import DashboardDb
 from utils.filesio import mkdir
+from utils.scoring import score, naive_prf_spans_score
 
 db_path = Path("./run/dashboard.sqlite")
 mkdir(db_path)
 
 
-def compute_scores(file_name: Path):
-    """Compute scores (Dummy function)."""
-    ents_f = random.randrange(0, 100) / 100
-    ents_r = random.randrange(0, 100) / 100
-    ents_p = random.randrange(0, 100) / 100
+@st.cache_data()
+def get_gold():
+    """Return Gold data for scoring"""
+    gold_file = Path("../data/dataset_hackatal_20230604.json.test")
+    data = json.load(gold_file.open())
 
-    return {
-        "ents_f": ents_f,
-        "ents_r": ents_r,
-        "ents_p": ents_p,
-        "ents_per_type": {
-            "PER": {"ents_f": ents_f, "ents_r": ents_r, "ents_p": ents_p}
-        },
-    }
+    return data
 
 
-@st.cache(hash_funcs={DashboardDb: id})
+@st.cache_resource()
 def prep_db():
     """Wrap db so it can be cached."""
     return DashboardDb(db_path)
@@ -46,6 +40,7 @@ with st.container():
     st.header("Nouveau score.")
 
     db = prep_db()
+    gold_data = get_gold()
     res = db.get_teams_mapping()
     teams = [name for name, _ in res]
     team_mapping = {name: id_team for name, id_team in res}
@@ -67,7 +62,9 @@ with st.container():
         with corpus_file.open("wb") as fh:
             fh.write(uploaded_file.read())
 
-        scores = compute_scores(corpus_file)
+        predicted_data = json.load(corpus_file.open())
+
+        scores = naive_prf_spans_score(predicted_data, gold_data)
         score_dump = json.dumps(scores)
 
         db.put(
@@ -75,9 +72,9 @@ with st.container():
             team_mapping[team],
             uploaded_file.name,
             run_info,
-            scores["ents_f"],
-            scores["ents_r"],
-            scores["ents_p"],
+            scores["0_f"],
+            scores["0_r"],
+            scores["0_p"],
             score_dump,
         )
 
@@ -89,9 +86,9 @@ with st.container():
                     "team": team,
                     "file_name": corpus_file.name,
                     "run_info": run_info,
-                    "ents_f": scores["ents_f"],
-                    "ents_r": scores["ents_r"],
-                    "ents_p": scores["ents_p"],
+                    "f": scores["0_f"],
+                    "r": scores["0_r"],
+                    "p": scores["0_p"],
                     "score_dump": score_dump,
                 }
             ]

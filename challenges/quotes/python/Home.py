@@ -16,5 +16,5 @@ with st.container():
     st.title("HackaTAL 2023 - Détection de Citations.")
     st.header("Dashboard")
     st.markdown("""
-    [Bannière HackaTAL](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
+    ![Bannière HackaTAL](https://raw.githubusercontent.com/HackaTAL/2023/gh-pages/HackaTAL_2023.png)
     """)

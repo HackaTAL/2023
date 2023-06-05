@@ -1,13 +1,25 @@
-No pip3.7 to install with Debian
-
 Create a virtualenv with :
 
-    python3.7 -m venv .env
+    python3.7 -m venv .venv
 
+Activate it with :
+
+    source .venv/bin/activate
 
 Install dependecies with :
 
+    pip3 --require-virtualenv install -U pip setuptools wheel
     pip3 --require-virtualenv install -r requirements.txt
+
+Streamlit config is in .streamlit/config.toml
+18080 will be forward to 2268
+
+    [browser]
+    gatherUsageStats = false
+
+    [server]
+    address="localhost"
+    port=18080
 
 
 Run streamlit app with :
