@@ -6,31 +6,10 @@ from math import modf
 from pathlib import Path
 from typing import Any, Dict, Optional, Union
 
-from _jsonnet import evaluate_file
 from dateutil import parser, tz
 from dateutil.utils import default_tzinfo
 
 # jsonnet loader, some code idea from AllenNLP project
-
-
-def _env_vars() -> Dict[str, str]:
-    """Wrap `os.environ` to filter out values."""
-    return {key: value for key, value in os.environ.items() if value != ""}
-
-
-def load_jsonnet(
-    file_path: Union[str, Path], ext_vars: Optional[Dict[str, Any]] = None
-) -> Dict[str, Any]:
-    """Load a jsonnet, return dict.
-
-    Support jsonnet std.extVars as parameter or environement variables.
-    """
-    if isinstance(file_path, Path):
-        file_path = str(file_path)
-    if ext_vars is None:
-        ext_vars = {}
-    ext_vars = {**_env_vars(), **ext_vars}
-    return loads(evaluate_file(file_path, ext_vars=ext_vars))
 
 
 UTC = tz.UTC
