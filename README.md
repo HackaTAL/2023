@@ -12,7 +12,7 @@ avec la conférence CORIA TALN RJCRI RECITAL 2023
 Tâches : Contributeurs et Politique sur Wikipédia / Détection de citations  
 Site web : http://hackatal.github.io/2023  
 Dates : 5 et 6 juin 2023  
-Lieu : SCAI, 4 place Jussieu, 75005 Paris 
+Lieu : SCAI, 4 place Jussieu, 75005 Paris  
 Inscription : https://framaforms.org/inscription-au-hackatal-2023-1683007751  
 Fil twitter : https://twitter.com/hashtag/HackaTAL  
 Slack : (TBC)  
