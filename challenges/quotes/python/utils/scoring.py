@@ -116,8 +116,10 @@ def get_annotations_sets(dataset):
     docs = []
     for doc in dataset:
         spans_sets = defaultdict(list)
-        for spans in doc['spans'].values():
+        for spans_group, spans in doc['spans'].items():
             for s in spans:
+                if not s:
+                    continue
                 spans_sets[s[2]].append(s)
                 spans_sets['0'].append(s)
         docs.append(spans_sets)
@@ -134,7 +136,16 @@ def naive_prf_spans_score(predicted, gold_standard):
         labels = set([label for label in pred])
         labels |= set([label for label in gold])
         for label in labels:
-            score_per_type[label].score_set(set(pred), set(gold))
+            curr_pred = set([
+                tuple(s)
+                for s in pred.get(label, [])
+            ])
+            curr_gold = set([
+                tuple(s)
+                for s in gold.get(label, [])
+            ])
+            breakpoint()
+            score_per_type[label].score_set(curr_pred, curr_gold)
 
     score = {
         '0_p': score_per_type['0'].precision,
