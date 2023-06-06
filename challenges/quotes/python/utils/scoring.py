@@ -133,8 +133,7 @@ def naive_prf_spans_score(predicted, gold_standard):
 
     score_per_type = defaultdict(PRFScore)
     for pred, gold in zip(pred_spans, gold_spans):
-        labels = set([label for label in pred])
-        labels |= set([label for label in gold])
+        labels = set([label for label in gold])
         for label in labels:
             curr_pred = set([
                 tuple(s)
@@ -144,9 +143,9 @@ def naive_prf_spans_score(predicted, gold_standard):
                 tuple(s)
                 for s in gold.get(label, [])
             ])
-            breakpoint()
             score_per_type[label].score_set(curr_pred, curr_gold)
 
+    all_score = score_per_type['0']
     score = {
         '0_p': score_per_type['0'].precision,
         '0_r': score_per_type['0'].recall,
