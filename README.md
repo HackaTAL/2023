@@ -112,7 +112,6 @@ Aucune préparation requise des participants
 
 <img width="428" alt="image" src="https://github.com/HackaTAL/2023/assets/21262253/ddd6f7a5-70e6-436b-98b3-ea3fc6aa4d8e">
 
-
 ### Organisateurs
 
 - Adelaïde Calais (WikiMedia France)
